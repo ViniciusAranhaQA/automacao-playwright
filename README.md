@@ -1,4 +1,4 @@
-# Testes Automatizados com Playwright
+# Testes Automatizados com Playwright para a pagina da wikipedia
 
 Este projeto contém testes E2E para a Wikipedia e testes para a API GraphQLZero.
 
