@@ -1,5 +1,5 @@
 {
-  "name": "test-wikipedia-playwright",
+  "name": "automacao-playwright",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {},
@@ -9,6 +9,7 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.49.1",
-    "@types/node": "^22.10.2"
+    "@types/node": "^22.10.2",
+    "graphql-request": "^7.1.2"
   }
 }
