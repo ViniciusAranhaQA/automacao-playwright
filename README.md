@@ -8,7 +8,6 @@ Este projeto contém testes E2E para a Wikipedia e testes para a API GraphQLZero
 
 ## Execução Local
 - Rodar todos os testes: `npx playwright test --ui`
-- Atualizar snapshots: `UPDATE_SNAPSHOTS=true npx playwright test`
 
 ## GitHub Actions
 Os testes são executados automaticamente em cada *pull request* ou podem ser acionados manualmente via *workflow_dispatch*.
