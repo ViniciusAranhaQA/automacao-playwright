@@ -20,11 +20,12 @@ test.describe('GraphQL API - User Query', () => {
       }
     `;
 
-    // Importação dinâmica do `graphql-request`
+    // Importação dinâmica dentro do escopo assíncrono
     const { request } = await import('graphql-request');
 
     const response = await request(endpoint, query);
 
+    // Validações
     expect(response.user.id).toBe('1');
     expect(response.user.username).toBeDefined();
     expect(response.user.email).toContain('@');
