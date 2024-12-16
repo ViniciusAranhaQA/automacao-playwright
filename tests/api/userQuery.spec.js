@@ -1,5 +1,4 @@
 const { test, expect } = require('@playwright/test');
-const { request } = require('graphql-request');
 
 const endpoint = 'https://graphqlzero.almansi.me/api';
 
@@ -20,6 +19,9 @@ test.describe('GraphQL API - User Query', () => {
         }
       }
     `;
+
+    // Importação dinâmica do `graphql-request`
+    const { request } = await import('graphql-request');
 
     const response = await request(endpoint, query);
 

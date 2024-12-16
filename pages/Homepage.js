@@ -12,19 +12,19 @@ class Homepage {
       // Localizador para o logotipo principal da página.
       this.logo = page.locator('.central-textlogo-wrapper');
     }
-  
-    async open() {
-      // Navega para a URL base definida no Playwright (homepage da Wikipedia).
-      await this.page.goto('/');
-    }
-  
     async search(term) {
       // Preenche o campo de busca com o termo fornecido.
       await this.searchInput.fill(term);
   
       // Clica no botão de busca para realizar a pesquisa.
       await this.searchButton.click();
+    }  
+    async open() {
+      // Navega para a URL base definida no Playwright (homepage da Wikipedia).
+      await this.page.goto('/');
     }
+  
+   
   }
   
   // Exporta a classe para que possa ser usada em outros arquivos.
